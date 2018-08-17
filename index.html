@@ -1,0 +1,141 @@
+<!-- 
+    Układ 16:9
+    Ma być podobny (nie pixel w pixel)
+    Ma być responsywny (dostosowoywać się do wysokości przeglądarki)
+
+    ZŁOTE ZASADY
+    - Zrób tak jak potrafisz i tyle ile potrafisz
+    - Próbuj/testuj/sprawdzaj co by było. Takie próbowanie to najważniejsze cechy programisty
+    - Nie przeskakuj ćwiczenia. 
+ -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A dream about old Japan</title>
+    <style>
+        :root {
+            --picWidth: 100vh;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .picture {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            position: relative;
+            width: var(--picWidth);
+            height: calc(var(--picWidth) / 1.77777);
+            background-color: lightgray;
+            overflow: hidden;
+        }
+
+        h1{
+            font-size: 80%;
+            position:absolute;
+            bottom:5%;
+            right:5%;
+            color: #cb4422;
+            text-transform:capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .picture img {
+            position: absolute;
+            width: 100%;
+        }
+
+        img:nth-of-type(1) {
+            top: 5%;
+            left: 15%;
+        }
+
+        img:nth-of-type(2) {
+            top: 20%;
+            left: 0;
+        }
+
+        img:nth-of-type(3) {
+            top: 35%;
+            left: 20%;
+        }
+
+        img:nth-of-type(4) {
+            top: 33%;
+            left: 0%;
+        }
+
+        img:nth-of-type(5) {
+            top: 45%;
+            left: 0%;
+        }
+
+        img:nth-of-type(6) {
+            top: 65%;
+            right: 0;
+        }
+
+        img:nth-of-type(7) {
+            width: 5%;
+            top: 8%;
+            left: 30%;
+            z-index: 1;
+        }
+
+        img:nth-of-type(8) {
+            width: 20%;
+            top: 8%;
+            left: 63%;
+            z-index: 2;
+        }
+
+        img:nth-of-type(9) {
+            width: 46%;
+            top: 1%;
+            left: 0;
+            z-index: 2;
+        }
+
+        img:nth-of-type(10) {
+            width: 40%;
+            bottom: 13%;
+            right: 0;
+            z-index: 2;
+        }
+
+
+        img:nth-of-type(11) {
+            width: 5%;
+            bottom: 10%;
+            left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picture">
+        <!-- img[src=img/japan$.png]*11 -->
+        <img src="img/japan1.png" alt="">
+        <img src="img/japan2.png" alt="">
+        <img src="img/japan3.png" alt="">
+        <img src="img/japan4.png" alt="">
+        <img src="img/japan5.png" alt="">
+        <img src="img/japan6.png" alt="">
+        <img src="img/japan7.png" alt="">
+        <img src="img/japan8.png" alt="">
+        <img src="img/japan9.png" alt="">
+        <img src="img/japan10.png" alt="">
+        <img src="img/japan11.png" alt="">
+        <h1>lex aeterna</h1>
+    </div>
+</body>
+
+</html>
